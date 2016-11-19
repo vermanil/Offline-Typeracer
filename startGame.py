@@ -107,10 +107,11 @@ class Ui_O(object):
 
     def retranslateUi(self, O):
         O.setWindowTitle(_translate("O", "MainWindow", None))
-        self.startgame.setText(_translate("O", "StarGame", None))
+        self.startgame.setText(_translate("O", "StatGame", None))
         self.close.setText(_translate("O", "Close", None))
         self.proName.setText(_translate("O", "  OFFLINE TYPERACER", None))
-        self.showUserName.setText(_translate("O", "      Hello asdfg", None))
+        if userText != '':
+            self.showUserName.setText(_translate("O", "      Hello " + userText, None))
         self.changeUserName.setText(_translate("O", "Change Username", None))
         self.Score.setText(_translate("O", "Score", None))
         self.Instrution.setText(_translate("0", "Instruction", None))
@@ -574,7 +575,7 @@ class Ui_O(object):
         global timeLimit
         timeLimit = timeLimit + 1
         print timeLimit
-        if timeLimit == 60:
+        if timeLimit == 60 * (i/2):
             self.resultWindow1()
             self.firstActivity()
             self.final_time()

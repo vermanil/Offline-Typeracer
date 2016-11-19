@@ -33,11 +33,11 @@ class Ui_Audio(object):
         self.play.setGeometry(QtCore.QRect(20, 60, 84, 41))
         self.play.setObjectName(_fromUtf8("play"))
 
-        self.horizontalSlider = QtGui.QSlider(self.centralWidget)
-        self.horizontalSlider.setGeometry(QtCore.QRect(120, 70, 451, 20))
-        self.horizontalSlider.setProperty("value", 24)
-        self.horizontalSlider.setOrientation(QtCore.Qt.Horizontal)
-        self.horizontalSlider.setObjectName(_fromUtf8("horizontalSlider"))
+        # self.horizontalSlider = QtGui.QSlider(self.centralWidget)
+        # self.horizontalSlider.setGeometry(QtCore.QRect(120, 70, 451, 20))
+        # self.horizontalSlider.setProperty("value", 24)
+        # self.horizontalSlider.setOrientation(QtCore.Qt.Horizontal)
+        # self.horizontalSlider.setObjectName(_fromUtf8("horizontalSlider"))
 
         self.audioTextEdit = QtGui.QTextEdit(self.centralWidget)
         self.audioTextEdit.setGeometry(QtCore.QRect(50, 190, 481, 131))
